@@ -5,6 +5,7 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Great Minds Communications International Limited</title>
+    <link rel="stylesheet" href="style.css">
     <script src="https://unpkg.com/feather-icons"></script>
   </head>
   <body>
@@ -164,6 +165,29 @@
         </div>
       </div>
     </div>
-    <script type="module" src="/main.js"></script>
+   <script>
+    /*count section*/
+const counts = document.querySelectorAll('.count')
+const speed = 50
+
+counts.forEach((counter) => {
+    function upDate(){
+        const target = Number(counter.getAttribute('data-target'))
+        const count = Number(counter.innerText)
+        const inc = target / speed        
+        if(count < target){
+            counter.innerText = Math.floor(inc + count) 
+            setTimeout(upDate, 15)
+        }else{
+            counter.innerText = target
+            counter.innerText += "+"
+        }
+    }
+    upDate()
+})
+
+   </script>
+     
+  
   </body>
 </html>
