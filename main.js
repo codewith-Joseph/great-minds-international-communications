@@ -22,7 +22,5 @@ const swiper = new Swiper('.swiper', {
 menuToggleBtn.addEventListener('click', () => {
   menuIcon.classList.toggle('hidden');
   closeIcon.classList.toggle('hidden');
-
   navigationMenu.classList.toggle('hidden');
-  console.log('click');
 });
