@@ -1,5 +1,5 @@
 import './style.css';
-import Swiper from 'swiper';
+import Swiper, { Autoplay } from 'swiper';
 import 'swiper/css';
 
 const swiper = new Swiper('.swiper', {
@@ -7,6 +7,7 @@ const swiper = new Swiper('.swiper', {
     delay: 4000,
     disableOnInteraction: false,
   },
+  modules: [Autoplay],
   grabCursor: true,
   loop: true,
 });
