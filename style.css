@@ -49,7 +49,12 @@
   cursor: pointer;
 }
 
-.navigation a {
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+.navigation .navigation-link {
   font-size: 1rem;
   text-transform: uppercase;
   color: #fff;
@@ -60,11 +65,11 @@
   transition: color 0.3s;
 }
 
-.navigation a:hover {
+.navigation .navigation-link:hover {
   color: #ccc;
 }
 
-.container {
+.header {
   width: 100%;
   height: 100vh;
 }
@@ -80,4 +85,45 @@
   height: 100%;
   object-fit: cover;
   opacity: 0.4;
+}
+
+.header-contact-us-btn {
+  margin-right: 2rem;
+  background-color: white;
+  padding: 1rem;
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.header-contact-us-btn span {
+  font-size: 0.875rem;
+}
+
+.header-contact-us-btn div:first-child {
+  display: flex;
+  align-items: center;
+}
+
+.feather-40 {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.header-contact-us-btn-tel {
+  font-weight: 500;
+}
+
+.header-cta {
+  margin-top: 10rem;
+  background: #12664f;
+  color: #fff;
+  padding: 1.125rem 1.75rem;
+  display: inline-block;
+  font-size: 1.125rem;
+  text-decoration: none;
+}
+
+.header-cta:hover {
+  color: #ccc;
 }
