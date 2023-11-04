@@ -1,10 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700;900&display=swap');
 
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #141414;
 }
 
 .navbar {
@@ -47,6 +52,7 @@
   color: transparent;
   text-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
   cursor: pointer;
+  font-family: 'Quicksand';
 }
 
 .navigation {
@@ -295,6 +301,108 @@
   text-align: center;
   margin-top: 1.5rem;
 }
+.accordion {
+  margin-top: 3rem;
+}
+.accordion .contentBx {
+  position: relative;
+  margin: 0.625rem 1.25rem;
+}
+
+.accordion .contentBx .label {
+  position: relative;
+  padding: 0.625rem;
+  background: #12664f;
+  color: #fff;
+  cursor: pointer;
+}
+
+.accordion .contentBx .label::before {
+  content: '+';
+  position: absolute;
+  right: 1.25rem;
+  transform: translateX(-50%);
+  font-size: 1.5em;
+}
+
+.accordion .contentBx .content {
+  position: relative;
+  background: #333;
+  color: #fff;
+  height: 0;
+  overflow: hidden;
+  transition: 0.5s;
+  overflow-y: auto;
+}
+
+.accordion .contentBx.active .label::before {
+  content: '-';
+}
+
+.accordion .contentBx.active .content {
+  height: 9.375rem;
+  padding: 0.625rem;
+}
+.contact-us {
+  background-color: #1a1a1a;
+  margin-top: 2rem;
+  padding: 2.5rem;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.625rem;
+}
+.contact-us p {
+  color: white;
+  font-size: 1.125rem;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.contact-us p span {
+  display: block;
+  text-transform: none;
+}
+.contact-us label {
+  color: white;
+  margin-top: 1.25rem;
+  display: inline-block;
+}
+
+.contact-us input {
+  padding: 0.9375rem;
+  border: none;
+  width: 100%;
+  margin-top: 0.625rem;
+  font-size: 1rem;
+}
+
+.contact-us textarea {
+  width: 100%;
+  padding: 0.9375rem;
+  font-size: 1rem;
+  margin-top: 0.625rem;
+}
+
+.contact-us textarea:focus,
+.contact-us input:focus {
+  outline: none;
+}
+
+.contact-us button {
+  padding-block: 0.625rem;
+  padding-inline: 1.25rem;
+  background-color: #12664f;
+  color: #fff;
+  border: none;
+  font-size: 1rem;
+  margin-top: 0.9375rem;
+  font-weight: 500;
+}
+
+.contact-us button:hover {
+  background-color: #127258;
+}
 
 /* MOBILE VERSION */
 @media only screen and (max-width: 680px) {
@@ -373,6 +481,10 @@
 
   .services > h2 {
     margin-top: 25rem;
+  }
+
+  .faq > div {
+    padding: 1rem;
   }
 }
 
