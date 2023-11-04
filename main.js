@@ -19,15 +19,8 @@ const swiper = new Swiper('.swiper', {
   loop: true,
 });
 
-
-const toggleButton = document.getElementsByClassName('toggle-button')[0]
-const navbarLinks = document.getElementsByClassName('navbar-links')[0]
-
-toggleButton.addEventListener('click', () => {
-  navbarLinks.classList.toggle('active')
-})
-
-
-
-
-
+menuToggleBtn.addEventListener('click', () => {
+  menuIcon.classList.toggle('hidden');
+  closeIcon.classList.toggle('hidden');
+  navigationMenu.classList.toggle('hidden');
+});
