@@ -404,6 +404,48 @@ body {
   background-color: #127258;
 }
 
+/*TABLET VERSION*/
+
+@media only screen and (max-width: 950px) {
+  .navbar {
+    padding: 0 1.8rem;
+  }
+  .logo {
+    font-size: 1.5rem;
+  }
+  .header-contact-us-btn {
+    display: none;
+  }
+  .services > h2 {
+    margin-top: 25rem;
+  }
+
+  .about {
+    flex-direction: column;
+  }
+
+  .services > div {
+    justify-content: center;
+  }
+  .about-bg-lighter {
+    padding: 2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .about-bg-lighter p,
+  .about-bg-lighter h2,
+  .about-bg-lighter a {
+    margin: 0;
+  }
+
+  .about-bg-lighter p,
+  .about-bg-lighter a {
+    margin-top: 1.5rem;
+  }
+}
+
 /* MOBILE VERSION */
 @media only screen and (max-width: 680px) {
   .logo {
@@ -441,6 +483,11 @@ body {
   .navigation .navigation-link:hover {
     background-color: #222;
   }
+
+  .header-contact-us-btn {
+    display: inline-block;
+  }
+
   .hidden {
     display: none;
   }
