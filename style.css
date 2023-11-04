@@ -207,6 +207,11 @@
   margin-right: 3rem;
   text-align: center;
 }
+
+.about-bg-darker > div > h1 {
+  text-transform: uppercase;
+}
+
 .about-bg-darker > div img {
   width: 6.25rem;
   height: 6.25rem;
