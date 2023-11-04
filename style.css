@@ -367,6 +367,16 @@
   }
 
   .services > h2 {
-    margin-top: 15rem;
+    margin-top: 25rem;
+  }
+}
+
+/*SMALLER PHONES*/
+@media only screen and (max-width: 300px) {
+  .header-cta {
+    margin-top: 5rem;
+  }
+  .services > h2 {
+    margin-top: 32rem;
   }
 }
