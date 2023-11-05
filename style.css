@@ -238,7 +238,6 @@ body {
 .services > h2 {
   text-transform: uppercase;
   text-align: center;
-  margin-top: 5rem;
 }
 .services > div {
   display: flex;
@@ -283,20 +282,23 @@ body {
 }
 
 .faq > div {
-  padding: 5rem;
   position: absolute;
   top: 0;
   width: 100%;
   height: 100%;
 }
 
-.faq > div > h2 {
+.faq > div > div {
+  padding: 2rem;
+}
+
+.faq > div > div > h2 {
   text-align: center;
   color: #fff;
   text-transform: uppercase;
 }
 
-.faq > div > p {
+.faq > div > div > p {
   color: #fff;
   text-align: center;
   margin-top: 1.5rem;
@@ -404,6 +406,66 @@ body {
   background-color: #127258;
 }
 
+.footer {
+  background-color: #1a1a1a;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+  word-wrap: break-word;
+  position: absolute;
+  left: 0;
+  width: 100%;
+}
+
+.footer > div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0.625rem;
+  padding: 0.625rem;
+  align-items: baseline;
+}
+
+.footer > div > div {
+  flex: 0.5;
+}
+
+.footer > div > div > h4 {
+  text-transform: uppercase;
+}
+
+.footer > div > div > p {
+  font-size: 0.875rem;
+  margin-top: 0.9375rem;
+}
+
+.footer > div > .contact-info > div {
+  font-size: 0.875rem;
+  margin-top: 0.9375rem;
+}
+
+.footer > div > .contact-info > div > div {
+  display: flex;
+  align-items: center;
+  margin-top: 0.9375rem;
+}
+
+.contact-info-content {
+  margin-left: 0.625rem;
+}
+
+.footer > .social-media-links {
+  margin-top: 0.625rem;
+}
+
+.footer > .social-media-links > a {
+  background-color: #5e5d5d;
+  color: white;
+  display: inline-block;
+  padding: 0.625rem 0.9375rem;
+}
+
 /*TABLET VERSION*/
 
 @media only screen and (max-width: 950px) {
@@ -433,6 +495,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
   }
   .about-bg-lighter p,
   .about-bg-lighter h2,
@@ -455,12 +518,30 @@ body {
     padding: 0 1.8rem;
     height: 5rem;
   }
+  .banner h1 {
+    font-size: 1.5rem;
+  }
+
+  .banner {
+    padding: 0.625rem;
+  }
+
   .mobile-nav-menu {
     display: inline-block;
   }
+
+  .header-cta {
+    margin-top: 5rem;
+  }
+
   .mobile-nav-menu {
     color: #fff;
   }
+
+  .mobile-nav-menu:hover {
+    cursor: pointer;
+  }
+
   .navigation {
     flex-direction: column;
     position: absolute;
@@ -533,14 +614,38 @@ body {
   .faq > div {
     padding: 1rem;
   }
+
+  .footer > div {
+    flex-direction: column;
+  }
+
+  .footer {
+    padding: 0.625rem;
+  }
+
+  .contact-info-icon {
+    display: none;
+  }
+
+  .contact-info-content {
+    margin: 0;
+  }
 }
 
 /*SMALLER PHONES*/
-@media only screen and (max-width: 300px) {
+@media only screen and (max-width: 348px) {
   .header-cta {
     margin-top: 5rem;
   }
   .services > h2 {
-    margin-top: 32rem;
+    margin-top: 38rem;
+  }
+
+  .faq > div > div {
+    padding-inline: 0.125rem;
+  }
+
+  .footer {
+    word-break: break-all;
   }
 }
