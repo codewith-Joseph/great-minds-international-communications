@@ -619,6 +619,7 @@ body {
 
   .footer > div {
     flex-direction: column;
+    gap: 1.25rem;
   }
 
   .footer {

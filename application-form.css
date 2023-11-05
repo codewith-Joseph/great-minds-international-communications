@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #ccc;
+}
+
+header {
+  background-color: #333;
+  padding: 2rem;
+  color: #fff;
+  text-align: center;
+}
+
+header h1 {
+  text-transform: uppercase;
+}
+
+header h2 {
+  font-weight: 500;
+}
+
+.application-form-wrapper {
+  padding: 4rem;
+}
+
+.application-form {
+  padding: 2rem;
+  background-color: #222;
+  width: 70vw;
+  margin: auto;
+  gap: 1rem;
+  justify-content: space-around;
+}
+
+.application-form label {
+  color: #fff;
+}
+
+.application-form input,
+.application-form select,
+.application-form textarea {
+  width: 100%;
+  padding: 0.9375rem;
+  margin-top: 0.625rem;
+  font-size: 1rem;
+  border: none;
+}
+
+.application-form input:focus,
+.application-form select:focus,
+.application-form textarea:focus {
+  outline: none;
+}
+
+.application-form > div {
+  margin-top: 1.25rem;
+}
+
+.application-form button {
+  padding: 0.625rem 1.25rem;
+  border: none;
+  background-color: #12664f;
+  color: #fff;
+  font-size: 1rem;
+  margin-top: 0.625rem;
+}
+
+@media screen and (max-width: 680px) {
+  .application-form {
+    width: 100%;
+  }
+
+  .application-form-wrapper {
+    padding: 0;
+  }
+}
