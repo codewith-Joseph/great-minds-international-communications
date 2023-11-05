@@ -456,14 +456,16 @@ body {
 }
 
 .footer > .social-media-links {
-  margin-top: 0.625rem;
+  margin-top: 0.3125rem;
+  display: block;
 }
 
-.footer > .social-media-links > a {
+.footer > .social-media-links > div > a {
   background-color: #5e5d5d;
   color: white;
   display: inline-block;
   padding: 0.625rem 0.9375rem;
+  margin-top: 0.625rem;
 }
 
 /*TABLET VERSION*/
