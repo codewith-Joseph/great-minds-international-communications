@@ -431,7 +431,7 @@ body {
   flex: 0.5;
 }
 
-.footer > div > div > h4 {
+.footer h4 {
   text-transform: uppercase;
 }
 
@@ -455,17 +455,29 @@ body {
   margin-left: 0.625rem;
 }
 
-.footer > .social-media-links {
+.footer .social-media-links {
   margin-top: 0.3125rem;
   display: block;
+  width: fit-content;
 }
 
-.footer > .social-media-links > div > a {
+.footer .social-media-links > div > a {
   background-color: #5e5d5d;
   color: white;
   display: inline-block;
   padding: 0.625rem 0.9375rem;
   margin-top: 0.625rem;
+}
+
+.footer .useful-links > div > a {
+  margin-top: 0.625rem;
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+}
+
+.footer .useful-links > div > a:hover {
+  color: #ccc;
 }
 
 /*TABLET VERSION*/
