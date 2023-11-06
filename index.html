@@ -203,9 +203,15 @@
               <form action="https://formspree.io/f/mnqkrzvv" method="POST">
                 <div>
                   <label for="name"> Name </label>
-                  <input name="name" type="text" placeholder="Your full name" />
+                  <input
+                    required
+                    name="name"
+                    type="text"
+                    placeholder="Your full name"
+                  />
                   <label for="email"> Email </label>
                   <input
+                    required
                     name="email"
                     type="email"
                     placeholder="Enter your email address"
@@ -214,6 +220,7 @@
                 <div>
                   <label for="subject"> Subject </label>
                   <input
+                    required
                     name="subject"
                     type="text"
                     placeholder="Briefly describe your inquiry"
@@ -223,6 +230,7 @@
                   <label for="message"> Message </label>
                   <textarea
                     name="message"
+                    required
                     placeholder="Type your message here"
                     rows="5"
                   ></textarea>
